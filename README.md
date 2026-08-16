@@ -4,6 +4,15 @@
 
 > Plataforma de preparação para processos seletivos em tecnologia: o candidato sobe currículo e vaga, recebe um score de compatibilidade, faz um simulado técnico personalizado e sai com uma trilha de estudo personalizada e um perfil consolidado (Talent Passport).
 
+
+## 👥 Equipe
+
+| Nome | Papel | GitHub | LinkedIn |
+|------|-------|--------|----------|
+| Nícolas (Líder) | Frontend | [![GitHub](https://img.shields.io/badge/GitHub-NicolasSG-181717?style=flat&logo=github)](https://github.com/NicolasSG) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nicolas-sg-br/) |
+| Karina | Backend | [![GitHub](https://img.shields.io/badge/GitHub-KarinaS0uza-181717?style=flat&logo=github)](https://github.com/KarinaS0uza) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kar1na-souza/) |
+| Andreia | IA | [![GitHub](https://img.shields.io/badge/GitHub-Deialima-181717?style=flat&logo=github)](https://github.com/Deialima) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andreia-lima-4a8747168) |
+
 ## 🔗 Links rápidos
 
 | Recurso | Link |
@@ -165,13 +174,6 @@ variável com a URL pública da API seguida de `/api`.
 Detalhes completos em [docs/frontend.md](docs/frontend.md),
 [docs/backend.md](docs/backend.md) e [docs/ai.md](docs/ai.md).
 
-## 👥 Equipe
-
-| Nome | Papel | GitHub |
-|------|-------|--------|
-| Nícolas | Frontend | [![GitHub](https://img.shields.io/badge/GitHub-NicolasSG-181717?style=flat&logo=github)](https://github.com/NicolasSG) |
-| Karina | Backend | [![GitHub](https://img.shields.io/badge/GitHub-KarinaS0uza-181717?style=flat&logo=github)](https://github.com/KarinaS0uza) |
-| Andreia | IA | [![GitHub](https://img.shields.io/badge/GitHub-Deialima-181717?style=flat&logo=github)](https://github.com/Deialima) |
 
 ## 📅 Status do projeto
 
