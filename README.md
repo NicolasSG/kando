@@ -25,16 +25,14 @@
 
 ## 📑 Sumário
 
+- [Equipe](#-equipe)
 - [O problema](#-o-problema)
 - [A solução](#-a-solução)
-- [Demonstração](#-demonstração)
 - [Funcionalidades](#-funcionalidades)
 - [Arquitetura](#arquitetura)
 - [Tecnologias](#tecnologias)
 - [Como rodar localmente](#como-rodar-localmente)
-- [Equipe](#-equipe)
 - [Status do projeto](#-status-do-projeto)
-- [Aprendizados e desafios](#-aprendizados-e-desafios)
 - [Licença](#-licença)
 
 ## 🎯 O problema
