@@ -72,7 +72,7 @@ nenhum recrutador alimentando a plataforma.
 - [x] Importação de currículos e vagas em PDF, com tratamento de falhas de conversão
 - [x] Tratamento de erros de IA: prompt ausente, JSON inválido, limite de uso e erros de configuração
 - [x] Validação end-to-end contra a API real do Groq
-- [x] Deploy em produção
+- [x] Deploy Concluido
 
 ## Arquitetura
 
