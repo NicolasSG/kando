@@ -168,6 +168,19 @@ O tratamento de falhas transitórias é centralizado em `create_completion`
 
 ## Limitações conhecidas
 
+> **Nota — histórico da escolha de modelo:** durante a fase de testes, a equipe avaliou
+> múltiplos modelos servidos pela Groq (incluindo Llama, GPT e Qwen) ao longo de
+> aproximadamente uma semana. O Llama apresentou os resultados mais consistentes nos
+> testes locais e foi a escolha inicial para produção. Dois dias antes da entrega do
+> projeto, a Groq comunicou por e-mail a descontinuação do modelo Llama utilizado,
+> exigindo a migração para o segundo modelo com melhor desempenho nos testes
+> (`openai/gpt-oss-120b`) em um prazo de 24 horas. Essa migração emergencial explica
+> as trocas de modelo visíveis no histórico de commits (qwen → gpt → qwen → gpt) e
+> reforça a recomendação acima de sempre conferir `ai_core/llm.py` e a variável
+> `GROQ_MODEL` efetivamente configurada em produção, em vez de assumir que o modelo
+> documentado aqui é definitivo — dado o precedente de descontinuações por parte do
+> provedor com pouco aviso prévio.
+
 - **Sem validação contra o texto de entrada:** a canonicalização de contratos JSON
   (`ai_core/json_contracts.canonicalize_json`) traduz chaves e valores de PT para EN, mas
   não confere se o que a IA extraiu de fato aparece no texto original enviado (currículo ou
