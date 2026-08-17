@@ -1,4 +1,4 @@
-# Kando — Talent Passport
+# KANdo — Talent Passport
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
@@ -32,6 +32,7 @@
 - [Arquitetura](#arquitetura)
 - [Tecnologias](#tecnologias)
 - [Como rodar localmente](#como-rodar-localmente)
+- [Nota de esclarecimento](#-nota-de-esclarecimento)
 - [Status do projeto](#-status-do-projeto)
 - [Licença](#-licença)
 
@@ -76,12 +77,17 @@ nenhum recrutador alimentando a plataforma.
 
 Visão geral do fluxo:
 
-```
-Currículo ──┐
-            ├─→ Matching ─→ Desafio Técnico ─→ Avaliação de Respostas ─┐
-Vaga ───────┘                                                          │
-                                                                        ▼
-                                        Dashboard ←── Trilha de Estudo ←┴─→ Talent Passport
+```mermaid
+flowchart LR
+    A[Currículo] --> C[Matching]
+    B[Vaga] --> C
+    A --> D[Desafio Técnico]
+    B --> D
+    C --> D
+    D --> E[Avaliação de Respostas]
+    E --> F[Dashboard]
+    F --> G[Trilha de Estudo]
+    F --> H[Talent Passport]
 ```
 
 Para detalhes de implementação de cada parte, veja as docs específicas linkadas acima.
@@ -171,6 +177,21 @@ variável com a URL pública da API seguida de `/api`.
 
 Detalhes completos em [docs/frontend.md](docs/frontend.md),
 [docs/backend.md](docs/backend.md) e [docs/ai.md](docs/ai.md).
+
+## 📝 Nota de esclarecimento
+
+> **Nota de esclarecimento — histórico da escolha de modelo:** durante a fase de testes, a equipe avaliou
+> múltiplos modelos servidos pela Groq (incluindo Llama, GPT e Qwen) ao longo de
+> aproximadamente uma semana. O Llama apresentou os resultados mais consistentes nos
+> testes locais e foi a escolha inicial para produção. Dois dias antes da entrega do
+> projeto, a Groq comunicou por e-mail a descontinuação do modelo Llama utilizado,
+> exigindo a migração para o segundo modelo com melhor desempenho nos testes
+> (`openai/gpt-oss-120b`) em um prazo de 24 horas. Essa migração emergencial explica
+> as trocas de modelo visíveis no histórico de commits (qwen → gpt → qwen → gpt) e
+> reforça a recomendação acima de sempre conferir `ai_core/llm.py` e a variável
+> `GROQ_MODEL` efetivamente configurada em produção, em vez de assumir que o modelo
+> documentado aqui é definitivo — dado o precedente de descontinuações por parte do
+> provedor com pouco aviso prévio.
 
 
 ## 📅 Status do projeto
